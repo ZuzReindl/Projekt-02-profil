@@ -15,7 +15,112 @@ tlačítko twitter          #1da1f2
 */
 
 
-body {
-  background-color: #bdc3c7;
+.body {
+ background-color: #bdc3c7;
+ padding: 50% ;
+ }
+
+.obsah {
+  font-family: 'Source Sans Pro', 'Motserrat', 'Arial', sans serif;
+  float:left;
+  color: #e5e9ec;
+  background-color: #31363b;
+  width: 350px;
+  margin: 233px 0 100px -350px;
+  padding: 0 0 150px 0;
 }
 
+.profil {
+  margin: 0 0 50px 0;
+
+}
+
+img {
+  width: 100%
+}
+
+.jmeno {
+  color: #e5e9ec;
+  font-family: 'Montserrat', 'Arial', sans serif;
+}
+
+
+.foto {
+  float: left;
+  width: 350px;
+  margin: 0 0 30px 0;
+  
+}
+
+.logo {
+  position:absolute; top: 250px; left: 280px;
+  float: left;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #b92e81;
+  background-position: right bottom;
+}
+
+.odkazy {
+  position: absolute; top: 500px;
+  font-family: 'Source Sans Pro', 'Motserrat', 'Arial', sans serif;
+  font-variant: small-caps;
+  color: #e5e9ec;
+  list-style: none;
+  background-color: #31363b;
+  float: left;
+  margin: 50px 50px 50px 0px;
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+.portfolio {
+border-width: thin;
+border-style: groove;
+border-color: #3f464d;
+display: block;
+text-align:center;
+color: #e5e9ec;
+bottom: 0;
+}
+
+.facebook {
+border-width: thin;
+border-style: groove;
+border-color: #3f464d;
+display: inline-block;
+color: #e5e9ec;
+}
+
+.twitter {
+border-width: thin;
+border-style: groove;
+border-color: #3f464d;
+display: inline-block;
+color: #e5e9ec;
+}
+
+
+.odkazy a {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.portfolio a:hover {
+  color: #e74c3c;
+  box-shadow: inset 0px 0 0 0 #1da1f2;
+  transition: all .3s;
+}
+
+.twitter a:hover {
+  color: #1da1f2;
+  box-shadow: inset 0px 0 0 0 #1da1f2;
+}
+
+.facebook a:hover {
+  color: #3b5998;
+  box-shadow: inset 0px 0 0 0 #1da1f2;
+}
