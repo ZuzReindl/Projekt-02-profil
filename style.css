@@ -1,7 +1,9 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 /* toto je černá magie, na kterou nešahej! */
 html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+*, ::after, ::before { box-sizing: inherit;
+background-color: #bdc3c7
+}
 
 /*
 BARVY
@@ -16,7 +18,7 @@ tlačítko twitter          #1da1f2
 
 
 .body {
- background-color: #bdc3c7;
+ background-color: #31363b;
  padding: 50% ;
  }
 
@@ -24,15 +26,22 @@ tlačítko twitter          #1da1f2
   font-family: 'Source Sans Pro', 'Motserrat', 'Arial', sans serif;
   float:left;
   color: #e5e9ec;
-  background-color: #31363b;
   width: 350px;
   margin: 233px 0 100px -350px;
   padding: 0 0 150px 0;
+  background-color: #31363b;
+  box-shadow: 2px 2px 10px 2px black;
+}
+
+.obsah p {
+  background-color: #31363b;
+  padding-left: 20px;
 }
 
 .profil {
   margin: 0 0 50px 0;
-
+  background-color: #31363b;
+  box-shadow: 0px 0px 2px 0px black;
 }
 
 img {
@@ -42,6 +51,8 @@ img {
 .jmeno {
   color: #e5e9ec;
   font-family: 'Montserrat', 'Arial', sans serif;
+  background-color: #31363b;
+  padding-left: 20px;
 }
 
 
@@ -49,7 +60,8 @@ img {
   float: left;
   width: 350px;
   margin: 0 0 30px 0;
-  
+  background-color: #31363b;
+  box-shadow: 2px 10px 10px black;
 }
 
 .logo {
@@ -64,13 +76,13 @@ img {
 .odkazy {
   position: absolute; top: 500px;
   font-family: 'Source Sans Pro', 'Motserrat', 'Arial', sans serif;
-  font-variant: small-caps;
+  text-transform: uppercase;
   color: #e5e9ec;
   list-style: none;
   background-color: #31363b;
   float: left;
-  margin: 50px 50px 50px 0px;
-  padding-left: 20px;
+  margin-top: 75px;
+  padding-left: inherit;
   text-decoration: none;
 }
 
@@ -78,26 +90,38 @@ img {
 border-width: thin;
 border-style: groove;
 border-color: #3f464d;
+border-left:none;
+border-right:none;
+margin-left: none;
+padding-left: 80px;
+padding-right: 70px;
 display: block;
 text-align:center;
 color: #e5e9ec;
 bottom: 0;
+background-color: #31363b;
 }
 
 .facebook {
 border-width: thin;
 border-style: groove;
 border-color: #3f464d;
+border-bottom: none;
+border-left:none;
 display: inline-block;
 color: #e5e9ec;
+background-color: #31363b;
 }
 
 .twitter {
 border-width: thin;
 border-style: groove;
 border-color: #3f464d;
+border-bottom: none;
+border-right: none;
 display: inline-block;
 color: #e5e9ec;
+background-color: #31363b
 }
 
 
@@ -107,20 +131,23 @@ color: #e5e9ec;
   font-size: 20px;
   text-decoration: none;
   color: white;
+  background-color: #31363b;
 }
 
 .portfolio a:hover {
-  color: #e74c3c;
+  background-color: #e74c3c;
   box-shadow: inset 0px 0 0 0 #1da1f2;
-  transition: all .3s;
 }
 
 .twitter a:hover {
-  color: #1da1f2;
+  background-color: #1da1f2;
   box-shadow: inset 0px 0 0 0 #1da1f2;
+  border-left:none;
+  padding-right: 100px;
 }
 
 .facebook a:hover {
-  color: #3b5998;
+  background-color: #3b5998;
   box-shadow: inset 0px 0 0 0 #1da1f2;
+  border-right: none;
 }
